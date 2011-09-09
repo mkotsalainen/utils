@@ -1,7 +1,7 @@
 apt-get install -y git-core zsh curl htop vim ctags ack-grep
 wget http://github.com/mkotsalainen/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 wget http://github.com/mkotsalainen/dotvim/raw/master/install.sh -O - | sh
-chsh $(whoami) -s /bin/zsh
+chsh $(pwd | sed 's|/home/||') -s /bin/zsh
 
 #install autojump
 wget https://github.com/downloads/joelthelion/autojump/autojump_v16.tar.gz
