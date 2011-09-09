@@ -1,3 +1,4 @@
+cd
 wget https://github.com/downloads/joelthelion/autojump/autojump_v16.tar.gz
 tar -xvzf autojump_v16.tar.gz
 cd autojump_v16

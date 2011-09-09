@@ -1,13 +1,14 @@
+echo "installing nice utils"
 apt-get install -y git-core zsh curl htop vim ctags ack-grep
+
+echo "installing oh my zsh"
 wget http://github.com/mkotsalainen/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+
+echo "installing vim dotfiles"
 wget http://github.com/mkotsalainen/dotvim/raw/master/install.sh -O - | sh
 chsh $(pwd | sed 's|/home/||') -s /bin/zsh
 
-#install autojump
-wget https://github.com/downloads/joelthelion/autojump/autojump_v16.tar.gz
-tar -xvzf autojump_v16.tar.gz
-cd autojump_v16
-./install.zsh
-echo "source /etc/profile.d/autojump.zsh" >> ~/.zshrc
-cd
-rm -rf autojump_v16
+echo "installing autojump"
+~/utils/install_autojump.sh
+
+echo "all done!"
