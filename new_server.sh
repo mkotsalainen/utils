@@ -8,6 +8,9 @@ echo "installing vim dotfiles"
 wget http://github.com/mkotsalainen/dotvim/raw/master/install.sh -O - | sh
 chsh $(pwd | sed 's|/home/||') -s /bin/zsh
 
+echo "getting utils"
+git clone git://github.com/mkotsalainen/utils.git ~/utils
+
 echo "installing autojump"
 ~/utils/install_autojump.sh
 
