@@ -1,5 +1,5 @@
 exec ctags -f .tags \
--h ".php" -R \
+-h ".php" -h ".py" -R \
 --exclude="\.svn" \
 --exclude="\.git" \
 --totals=yes \

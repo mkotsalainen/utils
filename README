@@ -1,0 +1,1 @@
+make sure you add symlinks to /usr/local/bin so that macvim picks it up on it on its path
