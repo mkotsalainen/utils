@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 exec ctags -f .tags \
 -h ".php" -h ".py" -R \
 --exclude="\.svn" \
