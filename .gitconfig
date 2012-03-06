@@ -1,0 +1,33 @@
+[user]
+	name = Matti Kotsalainen
+	email = matti@kotsalainen.org
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	grep = auto
+	branch = auto
+	show-branch = auto
+[alias]
+	a = add
+	l = log --format='%Cgreen%h %Creset %an %Cred%ar %Creset %s'
+	ci = commit
+	co = checkout
+	st = status -s
+	undo = reset --hard
+	changes = diff -name-status -r
+	diffstat = diff --stat -r
+    up = !git fetch origin && git rebase origin/master
+    cob = checkout -b
+    svnpull = !git stash && git svn rebase && git stash pop
+    svnpush = !git stash && git svn rebase && git svn dcommit && git stash pop
+[core]
+	quotepath = false
+	excludesfile = ~/.gitignore_global
+
+[merge]
+    tool=opendiff
+
+[mergetool]
+    tool=opendiff
+
