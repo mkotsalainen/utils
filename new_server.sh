@@ -1,5 +1,5 @@
 echo "installing nice utils"
-apt-get install -y git-core zsh curl htop vim ctags ack-grep
+apt-get install -y git-core zsh curl htop vim ctags ack-grep tig
 
 echo "installing oh my zsh"
 wget http://github.com/mkotsalainen/oh-my-zsh/raw/master/tools/install.sh -O - | sh
