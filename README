@@ -1,1 +1,3 @@
 make sure you add symlinks to /usr/local/bin so that macvim picks it up on it on its path
+
+wget http://github.com/mkotsalainen/utils/raw/master/new_server.sh -O - | sh
