@@ -52,3 +52,7 @@ alias sd='fasd -sid'     # interactive directory selection
 alias sf='fasd -sif'     # interactive file selection
 alias j='fasd_cd -d'     # cd, same functionality as j in autojump
 alias J='fasd_cd -d -i' # cd with interactive selection
+
+# This is required or NERDTree won't work
+export LC_ALL=en_US.utf-8
+export LANG="$LC_ALL"
