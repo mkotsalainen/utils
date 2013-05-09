@@ -23,7 +23,9 @@ tar xvf 1.0.1.tar.gz
 cd fasd-1.0.1/
 sudo make install
 cd ..
-rm -rf fasd-1.0.1/
+rm -rf fasd-1.0.1/ 1.0.1.tar.gz
+
+chsh $(whoami) -s /bin/zsh
 
 
 echo "all done!"

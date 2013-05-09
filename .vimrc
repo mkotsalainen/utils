@@ -96,7 +96,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 let g:syntastic_auto_loc_list=1
 
-Bundle 'gist-vim'
+"Bundle 'gist-vim'
 
 
 
