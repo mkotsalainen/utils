@@ -13,6 +13,10 @@ echo "install custom zsh stuff"
 ln -s ~/utils/matti.zsh ~/.oh-my-zsh/custom/
 ln -s ~/utils/matti.zsh-theme ~/.oh-my-zsh/themes/
 
+sed 's/^ZSH_THEME.*/ZSH_THEME="matti"/' -i .zshrc
+sed 's/^plugins.*/plugins=(git virtualenv django fabric cp brew autoenv fasd rsync)/' -i .zshrc
+
+
 echo "installing Vundle. do :BundleInstall to download vim plugins"
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ln -s ~/utils/.vimrc ~
@@ -25,7 +29,7 @@ sudo make install
 cd ..
 rm -rf fasd-1.0.1/ 1.0.1.tar.gz
 
-chsh $(whoami) -s /bin/zsh
+sudo chsh $(whoami) -s /bin/zsh
 
 
 echo "all done!"
