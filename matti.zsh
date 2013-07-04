@@ -21,7 +21,7 @@ alias tx='tar -xvzf'
 alias tc='tar -cvzf'
 
 #misc
-#alias v='vagrant'
+alias v='vagrant'
 alias vagrant='nocorrect vagrant'
 alias tree='nocorrect tree'
 alias gx='gitx --all'
@@ -52,6 +52,11 @@ alias sd='fasd -sid'     # interactive directory selection
 alias sf='fasd -sif'     # interactive file selection
 alias j='fasd_cd -d'     # cd, same functionality as j in autojump
 alias J='fasd_cd -d -i' # cd with interactive selection
+
+mygo() {
+  mkdir -p $1 && cd $1
+}
+alias go=mygo
 
 # This is required or NERDTree won't work
 export LC_ALL=en_US.utf-8
