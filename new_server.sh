@@ -4,7 +4,7 @@ echo "installing nice utils"
 sudo apt-get install -y git-core zsh curl htop vim ctags ack-grep tig make
 
 echo "installing oh my zsh"
-wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 echo "getting utils"
 git clone https://github.com/mkotsalainen/utils.git ~/utils
