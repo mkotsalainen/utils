@@ -16,6 +16,9 @@ ln -s ~/utils/matti.zsh-theme ~/.oh-my-zsh/themes/
 sed 's/^ZSH_THEME.*/ZSH_THEME="matti"/' -i .zshrc
 sed 's/^plugins.*/plugins=(git virtualenv django fabric cp brew autoenv fasd rsync)/' -i .zshrc
 
+echo 'DISABLE_UPDATE_PROMPT=true' >> .zshrc
+echo 'DISABLE_AUTO_UPDATE=true' >> .zshrc
+
 
 echo "installing Vundle. do :BundleInstall to download vim plugins"
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
