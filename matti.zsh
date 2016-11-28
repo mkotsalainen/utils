@@ -3,9 +3,9 @@ set -o emacs
 alias c='clear'
 alias o='open'
 alias e='vim'
-alias h='history'
 alias hg='history | grep'
 alias g='git'
+alias h='history'
 
 alias ....= 'cd ../../..'
 alias .....='cd ../../../..'
@@ -14,7 +14,7 @@ alias .......='cd ../../../../../..'
 
 #we reset the prompt since the zsh formatting codes messes up the debug page otherwise
 alias rs='PS1="" ./manage.py runserver'
-alias sp='./manage.py shell_plus --use-pythonrc'
+alias sp='./manage.py shell_plus --bpython'
 alias p='bpython'
 alias ipython='nocorrect ipython'
 alias bpython='nocorrect bpython'
@@ -29,15 +29,21 @@ alias tree='nocorrect tree'
 alias gx='gitx --all'
 alias gk='gitk --all &'
 alias ack='nocorrect ack'
+alias her='heroku'
+alias ht='http'
+alias lf='less +F'
+alias catc='pygmentize -g'
 
 #http://tooky.github.com/2010/04/08/there-was-a-problem-with-the-editor-vi-git-on-mac-os-x.html
 export EDITOR=/usr/bin/vim
 
 alias ll='ls -lh'
+alias lt='ls -lt'
 alias la='ls -lAh'
 alias l='ls -lh'
 alias gc='open /Applications/Google\ Chrome.app'
-alias tig='tig status'
+alias t='tig status'
+alias tl='tig log'
 
 #drupal
 #alias dr='drush'
@@ -63,6 +69,8 @@ alias cheat='nocorrect cheat'
 
 alias wn='workon'
 alias da='deactivate'
+
+alias ssh=/usr/local/bin/set_background.sh
 
 newdir() {
   mkdir -p $1 && cd $1
